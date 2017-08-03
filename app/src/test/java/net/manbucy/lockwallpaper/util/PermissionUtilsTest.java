@@ -19,9 +19,5 @@ public class PermissionUtilsTest {
         PermissionUtils.repayPermission();
     }
 
-    @Test
-    public void getPermission() throws Exception {
-        PermissionUtils.getPermission();
-    }
 
 }
