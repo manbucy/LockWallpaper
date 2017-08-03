@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">画报查看器</string>
+    <string name="borrow_permission">更改权限为可读</string>
+    <string name="repay_permission">更改权限为默认</string>
+    <string name="load_database">加载数据库数据</string>
+    <string name="load_image">加载图片与内容</string>
+    <string name="set_wallpaper">设为桌面背景</string>
+    <string name="save_wallpaper">提取到本地</string>
+</resources>
