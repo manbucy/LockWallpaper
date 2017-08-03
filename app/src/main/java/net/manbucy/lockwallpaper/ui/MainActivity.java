@@ -56,6 +56,9 @@ public class MainActivity extends BaseActivity implements ImageOnTouchListener {
         initListener();
     }
 
+    /**
+     * 初始化view
+     */
     private void initView() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -78,6 +81,9 @@ public class MainActivity extends BaseActivity implements ImageOnTouchListener {
         Log.d("---MainActivity", "initView: ");
     }
 
+    /**
+     * 监听
+     */
     private void initListener() {
         setWallpaper.setOnClickListener(new View.OnClickListener() {
             @Override
