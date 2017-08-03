@@ -52,7 +52,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Image image = imageList.get(position);
-        Glide.with(mContext).load(image.getImagePath()).thumbnail(0.1f).into(holder.imageView);
+        Glide.with(mContext).load(image.getImagePath()).into(holder.imageView);
         holder.title.setText(image.getTitle());
         holder.content.setText(image.getContent());
     }
