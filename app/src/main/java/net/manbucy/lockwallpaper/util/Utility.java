@@ -34,6 +34,7 @@ public class Utility {
             return null;
         }
         return SQLiteDatabase.openOrCreateDatabase(srcDbFile, null);
+//        return SQLiteDatabase.openDatabase(srcPath , );
     }
 
     public static void copyFile(String srcFile, String destFile) {

@@ -114,7 +114,15 @@ public class MainActivity extends BaseActivity implements ImageOnTouchListener {
      */
     private void loadData() {
         //加载系统从网络下载好的锁屏画报
-        SQLiteDatabase database = Utility.getDB("/data/user/0/cn.nubia.gallerylockscreen/databases/SIT_CONTENT");
+        SQLiteDatabase database;
+//        String path = "/data/user/0/cn.nubia.gallerylockscreen/databases/SIT_CONTENT";
+        try{
+//            database = SQLiteDatabase.openDatabase(path ,null ,SQLiteDatabase.OPEN_READWRITE);
+            database = Utility.getDB("/data/user/0/cn.nubia.gallerylockscreen/databases/SIT_CONTENT");
+        } catch (Exception e){
+            PermissionUtils.repayPermission(null);
+            throw e;
+        }
         if (database != null) {
             Cursor cursor = database.query("SIT_CONTENT", new String[]{"TITLE", "CONTENT", "IMG_PATH"}, null,
                     null, null, null, null);

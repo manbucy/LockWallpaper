@@ -37,10 +37,11 @@ public class PermissionUtils {
                 "/data/user/0/cn.nubia.gallerylockscreen/files/image/*",
                 "/data/user/0/cn.nubia.gallerylockscreen/databases",
                 "/data/user/0/cn.nubia.gallerylockscreen/databases/SIT_CONTENT",
+                "/data/user/0/cn.nubia.gallerylockscreen/databases/SIT_CONTENT-journal",
                 "/data/user/0/cn.nubia.gallerylockscreen/files/preset",
                 "/data/user/0/cn.nubia.gallerylockscreen/files/preset/*"};
         permissions = new String[]{"771", "711", "771", "751", "771",
-                "700", "600", "771", "660", "700", "600"};
+                "700", "600", "771", "660","600", "700", "600"};
     }
 
     /**
